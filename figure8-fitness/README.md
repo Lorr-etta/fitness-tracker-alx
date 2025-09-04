@@ -33,4 +33,4 @@ This is a responsive landing page for Figure 8 Fitness, built with React and Tai
 ### Installation
 1. Clone the repository:
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Lorr-etta/fitness-tracker-alx
