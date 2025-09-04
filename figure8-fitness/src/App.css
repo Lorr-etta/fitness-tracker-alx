@@ -40,3 +40,22 @@
 .read-the-docs {
   color: #888;
 }
+
+/*------------------common size for all section-------------------*/
+.view {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  min-height: 80vh;
+  posItion: relative;
+
+  .home {
+    background: url("../assets/hero-bg.jpg") no-repeat center center/cover;
+    display: flex;
+    min-height: 120vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+}

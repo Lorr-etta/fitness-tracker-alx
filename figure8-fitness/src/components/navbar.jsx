@@ -1,18 +1,47 @@
+import { useState } from "react";
 
-function Navbar() {
-	return (
-		<nav className="bg-gray-800 p-4">
-			<div className="container mx-auto flex items-center justify-between">
-				<span className="text-green-400 text-xl font-bold">FIGURE 8</span>
-				<ul className="flex space-x-4">
-					<li><a href="#" className="text-white hover:text-green-400">Home</a></li>
-					<li><a href="#" className="text-white hover:text-green-400">About</a></li>
-					<li><a href="#" className="text-white hover:text-green-400">Services</a></li>
-                    <li><a href="#" className="text-white hover:text-green-400">Contact</a></li>
-				</ul>
-			</div>
-		</nav>
-	);
-}
+const Navbar = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const showSidebar = () => setIsSidebarOpen(true);
+  const hideSidebar = () => setIsSidebarOpen(false);
+
+  return (
+    <nav>
+      {/* Sidebar */}
+      <ul className="sidebar" style={{ display: isSidebarOpen ? 'flex' : 'none' }}>
+        <li onClick={hideSidebar}>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+              <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+            </svg>
+          </a>
+        </li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Community</a></li>
+      </ul>
+
+      {/* Main Navbar */}
+      <ul>
+        <li className="logo">FIGURE 8</li>
+        <li className="hideOnMobile"><a href="#">Home</a></li>
+        <li className="hideOnMobile"><a href="#">About</a></li>
+        <li className="hideOnMobile"><a href="#">Services</a></li>
+        <li className="hideOnMobile"><a href="#">Contact</a></li>
+        <li className="hideOnMobile"><a href="#">Community</a></li>
+        <li className="menu-button" onClick={showSidebar}>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  );
+};
 
 export default Navbar;
