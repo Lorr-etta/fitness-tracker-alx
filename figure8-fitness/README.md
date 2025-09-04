@@ -1,12 +1,36 @@
-# React + Vite
+# Figure 8 Fitness Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a responsive landing page for Figure 8 Fitness, built with React and Tailwind CSS. The project showcases a modern, interactive web design, with focus on usability, responsiveness, and aesthetic appeal.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Navbar
+- Fully responsive navigation bar.
+- Sidebar menu for mobile view.
+- Links to different sections: Home, About, Services, Contact, Community.
+- Toggleable sidebar with smooth show/hide animations.
 
-## Expanding the ESLint configuration
+### Hero Section
+- Full-screen hero with background image.
+- Highlight text: *“Your fitness journey starts here”*, with clickable bounce animation.
+- Join Now button, floating at top-right, responsive, and clickable.
+- Dark overlay on the hero background to make text readable.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Home Section
+- Newly created content section showcasing the core features of the landing page.
+- Fully responsive and styled consistently with the hero and navbar.
+
+### Styling
+- Tailwind CSS for utility-first styling.
+- Custom CSS for animations, hero overlay, navbar shadows, and responsive behavior.
+
+## Getting Started
+
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Installation
+1. Clone the repository:
+```bash
+git clone <your-repo-url>
