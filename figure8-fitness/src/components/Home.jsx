@@ -1,10 +1,11 @@
 import Hero from "./Hero";
+import Features from "./Features"
 
 function Home() {
   return (
     <div>
       <Hero />
-      {/* later you’ll add Features, Footer, etc. */}
+      <Features />
     </div>
   );
 }
