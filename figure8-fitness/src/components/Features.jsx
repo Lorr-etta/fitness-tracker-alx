@@ -14,7 +14,7 @@ const Features = () => {
                 </div>
                 <div className="feature-content">
                     <h3>Workouts</h3>
-                    <p>Log workouts, monitor your progress, and see your fitness journey in real time with detailed progress reports.</p>
+                    <p>Discover a variety of exercises, get expert tips, and follow videos and image demonstrations to perfect your routine and stay consistent.</p>
                 </div>
             </div>
 
@@ -25,7 +25,7 @@ const Features = () => {
                 </div>
                 <div className="feature-content">
                     <h3>Progress Tracking</h3>
-                    <p>Track your improvements over time with visual charts and statistics to keep you motivated.</p>
+                    <p>Log Workouts and Track your improvements over time with visual charts and statistics to keep you motivated.</p>
                 </div>
             </div>
 

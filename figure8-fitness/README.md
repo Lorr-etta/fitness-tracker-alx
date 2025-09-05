@@ -30,6 +30,12 @@ This is a responsive landing page for Figure 8 Fitness, built with React and Tai
 - Provides context about the service/brand.
 - Fully responsive and styled for readability.
 
+### Services
+- Yoga: Guided sessions to improve flexibility, balance, and relaxation.  
+- Diet: Personalized meal plans and nutrition guidance for healthy living.  
+- Virtual Coaching: Online coaching with certified trainers, accessible anytime.  
+- Expert Advice: Professional tips and insights on fitness, nutrition, and lifestyle.
+
 ### Styling
 - Tailwind CSS for utility-first styling.
 - Custom CSS for animations, hero overlay, navbar shadows, and responsive behavior.
