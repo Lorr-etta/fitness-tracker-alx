@@ -25,6 +25,11 @@ This is a responsive landing page for Figure 8 Fitness, built with React and Tai
 - Clean card-based layout for clarity.
 - Responsive design for both desktop and mobile screens.
 
+### About Section
+- Dedicated section describing Figure 8 Fitness.
+- Provides context about the service/brand.
+- Fully responsive and styled for readability.
+
 ### Styling
 - Tailwind CSS for utility-first styling.
 - Custom CSS for animations, hero overlay, navbar shadows, and responsive behavior.
