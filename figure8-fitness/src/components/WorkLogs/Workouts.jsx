@@ -1,5 +1,5 @@
 import React from 'react';
-import WorkoutImage from '../assets/images/workout.jpg';
+import WorkoutImage from '../../assets/images/workout.jpg';
 
 const Workouts = () => (
   <section className="workout" id="workout">

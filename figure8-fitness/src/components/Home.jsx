@@ -2,7 +2,8 @@ import Hero from "./Hero";
 import Features from "./Features"
 import AboutUs from "./About";
 import Services from "./Services";
-import Workouts from "./Workouts"
+import Workouts from "./WorkLogs/Workouts"
+import SearchExercises from "./WorkLogs/SearchExercises";
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       <AboutUs />
       <Services />
       <Workouts />
+      <SearchExercises/>
     </div>
   );
 }

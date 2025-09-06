@@ -3,10 +3,8 @@ import heroImage from "../assets/images/hero-fitness.jpg";
 function Hero() {
   return (
     <section className="hero view">
-      {/* Background image as <img> */}
       <img src={heroImage} alt="Hero background" className="hero-img" />
 
-      {/* Content */}
       <div className="highlights">
         <h1>
           <span className="white">Your Fitness Journey</span>
