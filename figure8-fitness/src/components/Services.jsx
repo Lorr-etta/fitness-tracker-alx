@@ -1,8 +1,8 @@
 import React from "react";
-import yogaIcon from "../assets/yoga.svg";
-import dietIcon from "../assets/diet.svg";
-import adviceIcon from "../assets/advice.svg";
-import trainerIcon from "../assets/trainer.svg";
+import yogaIcon from "../assets/icons/yoga.svg";
+import dietIcon from "../assets/icons/diet.svg";
+import adviceIcon from "../assets/icons/advice.svg";
+import trainerIcon from "../assets/icons/trainer.svg";
 
 const Services = () => {
   return (

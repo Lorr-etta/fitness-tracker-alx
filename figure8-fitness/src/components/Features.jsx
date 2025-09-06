@@ -1,8 +1,8 @@
-import React from 'react';
-import DumbbellIcon from '../assets/dumbbell.svg';
-import ProgressIcon from '../assets/progress.svg';
-import ServicesIcon from '../assets/services.svg';
-import CommunityIcon from '../assets/community.svg';
+import React, {useEffect, useState} from 'react';
+import DumbbellIcon from '../assets/icons/dumbbell.svg';
+import ProgressIcon from '../assets/icons/progress.svg';
+import ServicesIcon from '../assets/icons/services.svg';
+import CommunityIcon from '../assets/icons/community.svg';
 
 const Features = () => {
     return (
