@@ -36,6 +36,22 @@ This is a responsive landing page for Figure 8 Fitness, built with React and Tai
 - Virtual Coaching: Online coaching with certified trainers, accessible anytime.  
 - Expert Advice: Professional tips and insights on fitness, nutrition, and lifestyle.
 
+### Search Exercises Section
+Search Exercises
+- Added the SearchExercises component for users to search exercises.
+- Fetches exercise data dynamically from the WGER API (no subscription required).
+- Users can filter exercises by name, equipment, target muscle, and body part.
+- Horizontal scroll for body parts implemented using react-horizontal-scrolling-menu.
+- Fully responsive layout ensures search input and results display correctly on all screen sizes.
+
+### WorkLogs Components
+- Created and integrated new components under the WorkLogs folder to enhance the exercise tracking and browsing functionality.
+- ExerciseCard: Displays individual exercise details with image, body part, and target information.
+- Exercises: Handles fetching and rendering of exercises, includes pagination for better navigation.
+- BodyPart: Allows users to filter exercises by category (e.g., chest, legs, abs). Interactive design with icon and smooth scroll effect.
+- Updated layout to ensure smooth interaction between search functionality, body part filtering, and exercise display.
+- Improved user experience by making the exercise section responsive and consistent with the rest of the site.
+
 ### Styling
 - Tailwind CSS for utility-first styling.
 - Custom CSS for animations, hero overlay, navbar shadows, and responsive behavior.

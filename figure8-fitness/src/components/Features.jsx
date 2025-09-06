@@ -1,13 +1,13 @@
-import React, {useEffect, useState} from 'react';
 import DumbbellIcon from '../assets/icons/dumbbell.svg';
 import ProgressIcon from '../assets/icons/progress.svg';
 import ServicesIcon from '../assets/icons/services.svg';
 import CommunityIcon from '../assets/icons/community.svg';
 
 const Features = () => {
+
     return (
         <div className="features-container relative -mt-32 z20 px-4">
-            <div className="feature-item">
+            <a className="feature-item" href="#workout" style={{ textDecoration: 'none', color: 'inherit' }}>
                 <div className="feature-icon">
                     <img src={DumbbellIcon} alt="Workouts icon" className="w-12 h-12 mx-auto" />
                     <i className="fa-solid fa-dumbbell"></i>
@@ -16,7 +16,7 @@ const Features = () => {
                     <h3>Workouts</h3>
                     <p>Discover a variety of exercises, get expert tips, and follow videos and image demonstrations to perfect your routine and stay consistent.</p>
                 </div>
-            </div>
+            </a>
 
             <div className="feature-item">
                 <div className="feature-icon">
