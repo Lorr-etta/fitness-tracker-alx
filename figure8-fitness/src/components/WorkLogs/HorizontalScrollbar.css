@@ -1,0 +1,71 @@
+/* HorizontalScrollbar.css */
+.react-horizontal-scrolling-menu--wrapper {
+  position: relative;
+  padding: 0 40px;
+}
+
+.react-horizontal-scrolling-menu--scroll-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 10px 0;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.react-horizontal-scrolling-menu--scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+.left-arrow, .right-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.left-arrow:hover, .right-arrow:hover {
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.left-arrow {
+  left: 0;
+}
+
+.right-arrow {
+  right: 0;
+}
+
+.left-arrow img, .right-arrow img {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+/* Body part cards styling */
+.bodyPart-card {
+  min-width: 180px;
+  flex-shrink: 0;
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+/* Ensure horizontal scrolling container */
+.react-horizontal-scrolling-menu--scroll-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Smooth scrolling behavior */
+.react-horizontal-scrolling-menu--scroll-container {
+  scroll-behavior: smooth;
+}

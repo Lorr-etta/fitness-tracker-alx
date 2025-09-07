@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { ScrollMenu, VisibilityContext } from 'react-horizontal-scrolling-menu';
 import { Box, Typography } from '@mui/material';
+import './HorizontalScrollbar.css';
 
 import ExerciseCard from './ExerciseCard';
 import BodyPart from './BodyPart'; // 
@@ -32,22 +33,28 @@ const RightArrow = () => {
 // Horizontal scrollbar component
 const HorizontalScrollbar = ({ data, bodyParts, setBodyPart, bodyPart }) => {
   return (
-    <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
-      {data.map((item) => (
-        <Box
-          key={item.id || item}         
-          itemId={item.id || item}       
-          title={item.id || item}      
-          m="0 40px"
-        >
-          {bodyParts ? (
-            <BodyPart item={item} setBodyPart={setBodyPart} bodyPart={bodyPart} />
-          ) : (
-            <ExerciseCard exercise={item} />
-          )}
-        </Box>
-      ))}
-    </ScrollMenu>
+    <Box sx={{ width: '100%', position: 'relative' }}>
+      <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
+        {data.map((item) => (
+          <Box
+            key={item.id || item}         
+            itemId={item.id || item}       
+            title={item.id || item}      
+            sx={{
+              display: 'inline-flex',
+              margin: '0 4px',
+              flexShrink: 0
+            }}
+          >
+            {bodyParts ? (
+              <BodyPart item={item} setBodyPart={setBodyPart} bodyPart={bodyPart} />
+            ) : (
+              <ExerciseCard exercise={item} />
+            )}
+          </Box>
+        ))}
+      </ScrollMenu>
+    </Box>
   );
 };
 

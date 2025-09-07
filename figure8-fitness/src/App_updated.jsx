@@ -1,5 +1,5 @@
 import Home from "./components/Home";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import ErrorBoundary from "./components/ErrorBoundary";
 import Profile from "./components/Profile";
 import Dashboard from "./components/Dashboard";
@@ -10,8 +10,12 @@ import Features from "./components/Features";
 import About from "./components/About";
 import Navbar from "./components/navbar";
 import FloatingSocials from './components/FloatingSocials';
+import Footer from './components/Footer';
 
 function App() {
+  const location = useLocation();
+  const showFooter = location.pathname !== '/dashboard' && location.pathname !== '/dashboardpage';
+  
   return (
     <ErrorBoundary>
       <Navbar />
@@ -28,6 +32,7 @@ function App() {
         <Route path="/features" element={<Features />} />
         <Route path="/about" element={<About />} />
       </Routes>
+      {showFooter && <Footer />}
     </ErrorBoundary>
   );
 }
