@@ -350,13 +350,13 @@ nav li:first-child {
 }
 .features-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-columns: repeat(2, 1fr); 
     gap: 1rem;
-    padding: 1rem 0;
-    max-width: 1000px;
+    padding: 1rem, 1;
+    max-width: 10S00px;
     margin: 0 auto;
     filter: brightness(1);
-    grid-template: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template: repeat(auto-fit, minmax(200px, 1fr));
     
 
 }
@@ -1119,7 +1119,7 @@ filter: brightness(0.9);
 }
 
 .left-arrow:hover, .right-arrow:hover {
-  background: #3e8a50;
+  background: #50a963;
   transform: scale(1.05);
 }
 
