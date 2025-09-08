@@ -729,8 +729,9 @@ filter: brightness(0.9);
 .services-contents {
   width: 100%;
   display: grid;
-  grid-template-columns: 4fr 4fr;
+  grid-template-columns: repeat(auto-fit, minmax(250,1fr));
   grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
 }
 .service-box {
   display: flex;
@@ -755,6 +756,7 @@ filter: brightness(0.9);
   background-color: #fae7e1;
   outline: 1px solid palevioletred;
   margin: 10px 10px 0 10px;
+
 }
 .service-icon-box i {
   font-size: 26px;
@@ -764,6 +766,7 @@ filter: brightness(0.9);
 .service-desc {
   margin-left: 15px;
   flex-basis: 1;
+  
 }
 .services-desc h2 {
   color: black;
